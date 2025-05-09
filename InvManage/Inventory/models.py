@@ -6,15 +6,15 @@ from django.utils import timezone
 # Create your models here.
 class Inventory_model(models.Model):
     CATEGORY_CHOICES = [
-        ('fashion', 'Fashion'),
-        ('electronics', 'Electronics'),
-        ('food & beverage', 'Food & Beverage'),
-        ('home goods', 'Home Goods'),
-        ('books', 'Books'),
-        ('toys & games', 'Toys & Games'),
-        ('sporting goods', 'Sporting Goods'),
-        ('health & beauty', 'Health & Beauty'),
-        ('automotive', 'automotive'),
+        ('Fashion', 'Fashion'),
+        ('Electronics', 'Electronics'),
+        ('Food & Beverage', 'Food & Beverage'),
+        ('Home Goods', 'Home Goods'),
+        ('Books', 'Books'),
+        ('Toys & Games', 'Toys & Games'),
+        ('Sporting Goods', 'Sporting Goods'),
+        ('Health & Beauty', 'Health & Beauty'),
+        ('Automotive', 'automotive'),
     ]
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.CharField(
@@ -29,3 +29,4 @@ class Inventory_model(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.product_name} - {self.price} - {self.stock}"
+

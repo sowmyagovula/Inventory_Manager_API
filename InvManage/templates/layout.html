@@ -47,7 +47,9 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary fw-medium py-4">
             <div class="container">
-                <a class="navbar-brand fw-bold mx-4 d-flex  align-items-center" href="{% url 'home' %}">InMang</a>
+                
+                <a class="navbar-brand fw-bold mx-4 d-flex align-items-center" href="{% if user.is_authenticated %}{% url 'inventory_manage' %}{% else %}{% url 'home' %}{% endif %}">InMang</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class=" fw-bold navbar-toggler-icon home-btn"></span>
                 </button>
@@ -56,7 +58,7 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item mx-4">
-                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link active" aria-current="page" href="{% if user.is_authenticated %}{% url 'inventory_manage' %}{% else %}{% url 'home' %}{% endif %}">Home</a>
                         </li>
 
                     </ul>
