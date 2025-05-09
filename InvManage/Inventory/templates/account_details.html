@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Account{% endblock %}
+
+{% block content %}
+<div class=" mt-4">
+    <h1 class="text-center">My Account</h1>
+
+    <div class="d-flex justify-content-center mt-4">
+        <div class="card" style="width: 50%;">
+            <h4 class="card-title text-center text-success mt-3">Account Details</h4>
+            <div class="card-text">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Username</th>
+                            <td>{{ user.username|capfirst }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email</th>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Date Joined</th>
+                            <td>{{ user.date_joined }}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+</div>
+{% endblock %}

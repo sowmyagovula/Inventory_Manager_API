@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="jumbotron text-center">
+    <div class="container text-center my-4 p-5 text-white" style="background-color: #6597e7; border-radius: 60px;">
+        <h1 class="jumbotron-heading mb-4">Smart Inventory, Smarter Business</h1>
+      
+        <div class="mx-auto" style="max-width: 700px; text-align: justify;">
+          <p class="lead">
+            Welcome to your all-in-one Inventory Management System — 
+            the smart solution to track stock, manage orders, and simplify your supply chain.
+          </p>
+          <p class="lead">
+            Our user-friendly platform offers real-time insights. Whether you're a small business 
+            or a growing enterprise, our system empowers you to stay organized, reduce waste, 
+            and make data-driven decisions. Say goodbye to stockouts and overstocking — 
+            your smart inventory journey begins here.
+          </p>
+        </div>
+      
+        <div class="mt-4">
+          <a href="#" class="btn btn-primary btn-lg px-5 py-3 rounded-pill ">
+            🚀 Get Started
+          </a>
+          {% comment %} <a href="#" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill ms-3">
+            Learn More
+          </a> {% endcomment %}
+        </div>
+      </div>
+      
+      
+  </section>
+{% endblock %}
