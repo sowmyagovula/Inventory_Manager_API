@@ -3,6 +3,7 @@
 ## Project Overview
 The **Inventory Manager API** is a backend application designed to manage inventory systems efficiently. It provides RESTful endpoints for managing products, categories, stock levels, and more. The project is built with scalability and maintainability in mind, ensuring seamless integration with frontend systems.
 
+live server: https://inventory-manager-api-6w29.onrender.com
 ---
 
 ## Features
